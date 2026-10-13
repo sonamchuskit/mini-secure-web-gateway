@@ -1,0 +1,15 @@
+{
+  "categories": {
+    "social": ["facebook.com", "instagram.com", "twitter.com", "x.com", "tiktok.com"],
+    "ads": ["doubleclick.net", "adservice.google.com", "ads.example"],
+    "malware": ["evil.example", "malware.example", "phishing.example"]
+  },
+  "groups": {
+    "default": { "block_categories": ["malware", "ads"] },
+    "students": { "block_categories": ["malware", "ads", "social"] }
+  },
+  "client_groups": {
+    "127.0.0.1": "default"
+  },
+  "rate_limit": { "max_requests": 1000, "window_seconds": 10 }
+}
